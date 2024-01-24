@@ -1,0 +1,12 @@
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\bin\Debug\net6.0\WebApi.Utilities.deps.json
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\bin\Debug\net6.0\WebApi.Utilities.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\bin\Debug\net6.0\WebApi.Utilities.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\WebApi.Utilities.csproj.AssemblyReference.cache
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\WebApi.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\WebApi.Utilities.AssemblyInfoInputs.cache
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\WebApi.Utilities.AssemblyInfo.cs
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\WebApi.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\WebApi.Utilities.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\refint\WebApi.Utilities.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\WebApi.Utilities.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Utilities\obj\Debug\net6.0\ref\WebApi.Utilities.dll

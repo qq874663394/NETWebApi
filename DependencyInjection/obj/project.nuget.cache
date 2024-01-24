@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "THZrDgaPN+X4tvNi45FOPKLuTdMJm3GPa7cAKaAQq1+xYNm+2/rgeTbRYnC+5h2WWKtCgSBHRgfu5dapuzum9A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\DependencyInjection\\WebApi.DependencyInjection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Xiong\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",
+    "C:\\Users\\Xiong\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

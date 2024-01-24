@@ -1,0 +1,15 @@
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Repositories.deps.json
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Repositories.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Repositories.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.AssemblyInfoInputs.cache
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.AssemblyInfo.cs
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\refint\WebApi.Repositories.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\ref\WebApi.Repositories.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Utilities.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Utilities.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.csproj.AssemblyReference.cache
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.csproj.CopyComplete

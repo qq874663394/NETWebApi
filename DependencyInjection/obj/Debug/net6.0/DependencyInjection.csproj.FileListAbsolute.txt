@@ -1,0 +1,4 @@
+C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.AssemblyInfoInputs.cache
+C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.AssemblyInfo.cs
+C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.csproj.CoreCompileInputs.cache
