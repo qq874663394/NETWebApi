@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi.Repositories\WebApi.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

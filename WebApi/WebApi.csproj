@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebApi.Domain.Services\WebApi.Domain.Services.csproj" />
     <ProjectReference Include="..\WebApi.Domain\WebApi.Domain.csproj" />
     <ProjectReference Include="..\WebApi.Repositories\WebApi.Repositories.csproj" />
   </ItemGroup>
