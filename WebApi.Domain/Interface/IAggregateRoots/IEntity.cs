@@ -14,11 +14,11 @@ namespace WebApi.Domain.Interface.IAggregateRoots
         string KeyName { get; }
 
         #region 通用属性
-        Guid Id { get; set; }
+        Guid Code { get; set; }
         DateTime? CreateTime { get; set; }
-        Guid? CreateUserId { get; set; }
+        Guid? CreateUserCode { get; set; }
         DateTime? ModifyTime { get; set; }
-        Guid? ModifyUserId { get; set; }
+        Guid? ModifyUserCode { get; set; }
         #endregion
 
         abstract bool Equals(object obj);

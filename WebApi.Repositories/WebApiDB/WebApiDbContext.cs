@@ -47,7 +47,7 @@ namespace WebApi.Repositories.WebApiDB
             {
                 entity.ToTable("T_Button");
 
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.Action)
                     .HasMaxLength(50)
@@ -67,14 +67,14 @@ namespace WebApi.Repositories.WebApiDB
 
                 entity.HasOne(d => d.Menu)
                     .WithMany(p => p.T_Buttons)
-                    .HasForeignKey(d => d.MenuID)
+                    .HasForeignKey(d => d.MenuCode)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__T_Button__Modify__3CF40B7E");
             });
 
             modelBuilder.Entity<T_ButtonPermission>(entity =>
             {
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -86,7 +86,7 @@ namespace WebApi.Repositories.WebApiDB
 
                 entity.HasOne(d => d.Button)
                     .WithMany(p => p.T_ButtonPermissions)
-                    .HasForeignKey(d => d.ButtonID)
+                    .HasForeignKey(d => d.ButtonCode)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__T_ButtonP__Modif__42ACE4D4");
             });
@@ -95,7 +95,7 @@ namespace WebApi.Repositories.WebApiDB
             {
                 entity.ToTable("T_Email");
 
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.Body)
                     .HasMaxLength(8000)
@@ -113,7 +113,7 @@ namespace WebApi.Repositories.WebApiDB
 
                 entity.HasOne(d => d.SendUser)
                     .WithMany(p => p.T_Emails)
-                    .HasForeignKey(d => d.SendUserId)
+                    .HasForeignKey(d => d.SendUserCode)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__T_Email__CreateU__589C25F3");
             });
@@ -122,7 +122,7 @@ namespace WebApi.Repositories.WebApiDB
             {
                 entity.ToTable("T_Log");
 
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.Action)
                     .HasMaxLength(50)
@@ -140,7 +140,7 @@ namespace WebApi.Repositories.WebApiDB
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.T_Logs)
-                    .HasForeignKey(d => d.UserID)
+                    .HasForeignKey(d => d.UserCode)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__T_Log__CreateUse__53D770D6");
             });
@@ -149,7 +149,7 @@ namespace WebApi.Repositories.WebApiDB
             {
                 entity.ToTable("T_Menu");
 
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -170,7 +170,7 @@ namespace WebApi.Repositories.WebApiDB
 
             modelBuilder.Entity<T_MenuButton>(entity =>
             {
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -178,14 +178,14 @@ namespace WebApi.Repositories.WebApiDB
 
                 entity.HasOne(d => d.Button)
                     .WithMany(p => p.T_MenuButtons)
-                    .HasForeignKey(d => d.ButtonID)
+                    .HasForeignKey(d => d.ButtonCode)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__T_MenuBut__Modif__4F12BBB9");
             });
 
             modelBuilder.Entity<T_Resource>(entity =>
             {
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -211,7 +211,7 @@ namespace WebApi.Repositories.WebApiDB
             {
                 entity.ToTable("T_Org");
 
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -233,7 +233,7 @@ namespace WebApi.Repositories.WebApiDB
             {
                 entity.ToTable("T_Role");
 
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -247,16 +247,12 @@ namespace WebApi.Repositories.WebApiDB
             {
                 entity.ToTable("T_User");
 
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
                 entity.Property(e => e.Email)
                     .HasMaxLength(30)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.UserId)
-                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.FullName)
@@ -275,7 +271,7 @@ namespace WebApi.Repositories.WebApiDB
             });
             modelBuilder.Entity<T_UserOrg>(entity =>
             {
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -285,16 +281,16 @@ namespace WebApi.Repositories.WebApiDB
                 modelBuilder.Entity<T_UserOrg>()
                     .HasOne(ur => ur.User)
                     .WithMany(u => u.T_UserOrgs)
-                    .HasForeignKey(ur => ur.UserId);
+                    .HasForeignKey(ur => ur.UserCode);
 
                 modelBuilder.Entity<T_UserOrg>()
                     .HasOne(ur => ur.Org)
                     .WithMany(r => r.T_UserOrgs)
-                    .HasForeignKey(ur => ur.OrgId);
+                    .HasForeignKey(ur => ur.OrgCode);
             });
             modelBuilder.Entity<T_UserRole>(entity =>
             {
-                entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+                entity.Property(e => e.Code).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CreateTime).HasDefaultValueSql("(getdate())");
 
@@ -304,12 +300,12 @@ namespace WebApi.Repositories.WebApiDB
                 modelBuilder.Entity<T_UserRole>()
                     .HasOne(ur => ur.User)
                     .WithMany(u => u.T_UserRoles)
-                    .HasForeignKey(ur => ur.UserId);
+                    .HasForeignKey(ur => ur.UserCode);
 
                 modelBuilder.Entity<T_UserRole>()
                     .HasOne(ur => ur.Role)
                     .WithMany(r => r.T_UserRoles)
-                    .HasForeignKey(ur => ur.RoleId);
+                    .HasForeignKey(ur => ur.RoleCode);
 
             });
         }

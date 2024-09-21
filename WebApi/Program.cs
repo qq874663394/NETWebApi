@@ -96,10 +96,10 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddControllers();
 services.AddScoped<JwtTokenFilterAttribute>();
 //×¢²áAPIÒì³£¹ýÂËÆ÷Àà
-builder.Services.AddMvc(options =>
-{
-    options.Filters.Add(typeof(ApiExceptionFilter));
-});
+//builder.Services.AddMvc(options =>
+//{
+//    options.Filters.Add(typeof(ApiExceptionFilter));
+//});
 
 var app = builder.Build();
 app.UseDeveloperExceptionPage();

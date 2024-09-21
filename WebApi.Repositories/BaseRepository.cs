@@ -290,7 +290,7 @@ namespace WebApi.Repositories
             if (entity.ParentId == "") entity.ParentId = null;
             string cascadeId;
             int currentCascadeId = 1; //当前结点的级联节点最后一位
-            var sameLevels = _lazyDbContext.Value.Set<U>().AsNoTracking().AsQueryable().Where(o => o.ParentId == entity.ParentId && o.Id != entity.Id);
+            var sameLevels = _lazyDbContext.Value.Set<U>().AsNoTracking().AsQueryable().Where(o => o.ParentId == entity.ParentId && o.Code != entity.Code);
             foreach (var obj in sameLevels)
             {
                 int objCascadeId = int.Parse(obj.CascadeId.TrimEnd('.').Split('.').Last());
@@ -299,7 +299,7 @@ namespace WebApi.Repositories
 
             if (!string.IsNullOrEmpty(entity.ParentId))
             {
-                var parentOrg = _lazyDbContext.Value.Set<U>().AsNoTracking().AsQueryable().FirstOrDefault<U>(o => o.Id.ToString() == entity.ParentId);
+                var parentOrg = _lazyDbContext.Value.Set<U>().AsNoTracking().AsQueryable().FirstOrDefault<U>(o => o.Code.ToString() == entity.ParentId);
                 if (parentOrg != null)
                 {
                     cascadeId = parentOrg.CascadeId + currentCascadeId + ".";
@@ -328,9 +328,9 @@ namespace WebApi.Repositories
             CaculateCascade(obj);
 
             //获取旧的的CascadeId
-            var cascadeId = _lazyDbContext.Value.Set<U>().FirstOrDefault(o => o.Id == obj.Id).CascadeId;
+            var cascadeId = _lazyDbContext.Value.Set<U>().FirstOrDefault(o => o.Code == obj.Code).CascadeId;
             //根据CascadeId查询子部门
-            var objs = _lazyDbContext.Value.Set<U>().Where(u => u.CascadeId.Contains(cascadeId) && u.Id != obj.Id)
+            var objs = _lazyDbContext.Value.Set<U>().Where(u => u.CascadeId.Contains(cascadeId) && u.Code != obj.Code)
                 .OrderBy(u => u.CascadeId).ToList();
 
             //更新操作
@@ -340,7 +340,7 @@ namespace WebApi.Repositories
             foreach (var a in objs)
             {
                 a.CascadeId = a.CascadeId.Replace(cascadeId, obj.CascadeId);
-                if (a.ParentId == obj.Id.ToString())
+                if (a.ParentId == obj.Code.ToString())
                 {
                     a.ParentName = obj.Name;
                 }
