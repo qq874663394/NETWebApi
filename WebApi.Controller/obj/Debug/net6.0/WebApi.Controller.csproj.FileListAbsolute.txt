@@ -10,3 +10,16 @@ C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\obj\Debug\net6.0\WebApi.Con
 C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\obj\Debug\net6.0\refint\WebApi.Controller.dll
 C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\obj\Debug\net6.0\WebApi.Controller.pdb
 C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\obj\Debug\net6.0\ref\WebApi.Controller.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Domain.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Utilities.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Domain.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Utilities.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\obj\Debug\net6.0\WebApi.Controller.csproj.CopyComplete
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Controller.xml
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\obj\Debug\net6.0\WebApi.Controller.xml
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Controller.runtimeconfig.json
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.DependencyInjection.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Filters.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.Filters.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\bin\Debug\net6.0\WebApi.DependencyInjection.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Controller\obj\Debug\net6.0\WebApi.Controller.genruntimeconfig.cache

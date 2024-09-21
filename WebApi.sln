@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{D876C0DA-EA6D-43D7-9A2A-01766A7D65BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Controller", "WebApi.Controller\WebApi.Controller.csproj", "{FC0CCF75-DE52-491C-A47F-766D424CF7C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Controllers", "WebApi.Controller\WebApi.Controllers.csproj", "{FC0CCF75-DE52-491C-A47F-766D424CF7C9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Domain", "WebApi.Domain\WebApi.Domain.csproj", "{02FD9C39-0B0B-4102-BCD5-969D00AAED90}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.DependencyInjection"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Repositories", "WebApi.Repositories\WebApi.Repositories.csproj", "{9BD371BF-B196-4570-B31A-0B8CB063CCBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Domain.Services", "WebApi.Domain.Services\WebApi.Domain.Services.csproj", "{C36F0E00-A482-409C-889B-5F06BA77A1A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Domain.Services", "WebApi.Domain.Services\WebApi.Domain.Services.csproj", "{C36F0E00-A482-409C-889B-5F06BA77A1A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,7 +75,7 @@ Global
 		{9E790E5D-26D0-493C-8860-622E190B8888} = {19FAE56B-9974-4893-BB56-CC80E0E847AA}
 		{78FA77BC-BF90-4641-9D55-FE5184690024} = {19FAE56B-9974-4893-BB56-CC80E0E847AA}
 		{9BD371BF-B196-4570-B31A-0B8CB063CCBA} = {19FAE56B-9974-4893-BB56-CC80E0E847AA}
-		{C36F0E00-A482-409C-889B-5F06BA77A1A7} = {CF53AB1B-252E-43B3-8EBA-F15C30C18452}
+		{C36F0E00-A482-409C-889B-5F06BA77A1A7} = {22F0DBCE-0A50-4960-8867-0FAD61ABF22F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {207B0199-85B7-4864-ADD7-D1C1A78773BD}

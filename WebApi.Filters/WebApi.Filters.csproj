@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DependencyInjection\WebApi.DependencyInjection.csproj" />
+    <ProjectReference Include="..\WebApi.Domain.Services\WebApi.Domain.Services.csproj" />
     <ProjectReference Include="..\WebApi.Domain\WebApi.Domain.csproj" />
     <ProjectReference Include="..\WebApi.Utilities\WebApi.Utilities.csproj" />
   </ItemGroup>

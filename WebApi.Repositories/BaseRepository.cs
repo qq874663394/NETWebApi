@@ -13,6 +13,7 @@ using WebApi.Domain;
 using WebApi.Repositories.WebApiDB;
 using WebApi.Domain.Enum;
 using Microsoft.EntityFrameworkCore.Storage;
+using WebApi.Domain.AggregateRoots.TreeEntity;
 
 namespace WebApi.Repositories
 {
@@ -21,8 +22,6 @@ namespace WebApi.Repositories
     {
         protected readonly WebApiRepositoryContext _repository;
         protected Lazy<WebApiDbContext> _lazyDbContext => _repository.LazyDbContex;
-        //protected UpDbContext _dbContext => _lazyDbContext.Value;
-
         protected BaseRepository(WebApiRepositoryContext context)
         {
             _repository = context;
@@ -54,9 +53,13 @@ namespace WebApi.Repositories
 
         private string GetEagerLoadingPath(Expression<Func<TEntity, dynamic>> eagerLoadingProperty)
         {
+            // 从属性访问表达式中获取成员表达式
             var memberExpression = this.GetMemberInfo(eagerLoadingProperty);
+            // 获取参数名称（通常为 "x"）
             var parameterName = eagerLoadingProperty.Parameters.First().Name;
+            // 将成员表达式转换为字符串
             var memberExpressionStr = memberExpression.ToString();
+            // 移除参数名称，仅保留路径
             var path = memberExpressionStr.Replace(parameterName + ".", "");
             return path;
         }
@@ -121,7 +124,6 @@ namespace WebApi.Repositories
         {
             return Filter(exp);
         }
-
         private IQueryable<TEntity> Filter(Expression<Func<TEntity, bool>> exp)
         {
             var dbSet = _lazyDbContext.Value.Set<TEntity>().AsNoTracking().AsQueryable();
@@ -276,6 +278,74 @@ namespace WebApi.Repositories
         public bool Exists(Expression<Func<TEntity, bool>> expression)
         {
             return _lazyDbContext.Value.Set<TEntity>().Any(expression);
+        }
+
+        /// <summary>
+        /// 计算实体更新的层级信息
+        /// </summary>
+        /// <typeparam name="U">U必须是一个继承TreeEntity的结构</typeparam>
+        /// <param name="entity"></param>
+        public void CaculateCascade<U>(U entity) where U : TreeEntity
+        {
+            if (entity.ParentId == "") entity.ParentId = null;
+            string cascadeId;
+            int currentCascadeId = 1; //当前结点的级联节点最后一位
+            var sameLevels = _lazyDbContext.Value.Set<U>().AsNoTracking().AsQueryable().Where(o => o.ParentId == entity.ParentId && o.Id != entity.Id);
+            foreach (var obj in sameLevels)
+            {
+                int objCascadeId = int.Parse(obj.CascadeId.TrimEnd('.').Split('.').Last());
+                if (currentCascadeId <= objCascadeId) currentCascadeId = objCascadeId + 1;
+            }
+
+            if (!string.IsNullOrEmpty(entity.ParentId))
+            {
+                var parentOrg = _lazyDbContext.Value.Set<U>().AsNoTracking().AsQueryable().FirstOrDefault<U>(o => o.Id.ToString() == entity.ParentId);
+                if (parentOrg != null)
+                {
+                    cascadeId = parentOrg.CascadeId + currentCascadeId + ".";
+                    entity.ParentName = parentOrg.Name;
+                }
+                else
+                {
+                    throw new Exception("未能找到该组织的父节点信息");
+                }
+            }
+            else
+            {
+                cascadeId = ".0." + currentCascadeId + ".";
+                entity.ParentName = "根节点";
+            }
+
+            entity.CascadeId = cascadeId;
+        }
+        /// <summary>
+        /// 更新树状结构实体
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <typeparam name="U"></typeparam>
+        public void UpdateTreeObj<U>(U obj) where U : TreeEntity
+        {
+            CaculateCascade(obj);
+
+            //获取旧的的CascadeId
+            var cascadeId = _lazyDbContext.Value.Set<U>().FirstOrDefault(o => o.Id == obj.Id).CascadeId;
+            //根据CascadeId查询子部门
+            var objs = _lazyDbContext.Value.Set<U>().Where(u => u.CascadeId.Contains(cascadeId) && u.Id != obj.Id)
+                .OrderBy(u => u.CascadeId).ToList();
+
+            //更新操作
+            _lazyDbContext.Value.Set<U>().Update(obj);
+
+            //更新子模块的CascadeId
+            foreach (var a in objs)
+            {
+                a.CascadeId = a.CascadeId.Replace(cascadeId, obj.CascadeId);
+                if (a.ParentId == obj.Id.ToString())
+                {
+                    a.ParentName = obj.Name;
+                }
+                _lazyDbContext.Value.Set<U>().Update(a);
+            }
         }
 
         #region 提交数据

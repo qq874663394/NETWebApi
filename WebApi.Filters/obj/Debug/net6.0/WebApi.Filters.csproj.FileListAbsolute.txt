@@ -19,3 +19,7 @@ C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\obj\Debug\net6.0\refint\WebApi
 C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\obj\Debug\net6.0\WebApi.Filters.pdb
 C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\obj\Debug\net6.0\WebApi.Filters.genruntimeconfig.cache
 C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\obj\Debug\net6.0\ref\WebApi.Filters.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\bin\Debug\net6.0\WebApi.Domain.Services.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\bin\Debug\net6.0\WebApi.Repositories.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\bin\Debug\net6.0\WebApi.Domain.Services.pdb
+C:\Users\Xiong\source\repos\WebApi\WebApi.Filters\bin\Debug\net6.0\WebApi.Repositories.pdb

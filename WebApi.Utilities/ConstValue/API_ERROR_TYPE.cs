@@ -21,8 +21,6 @@
         /// 参数错误
         /// </summary>
         public const string PARAM_ERROR = "PARAM_ERROR";
-        public const string CONSUME_CHECK_FAIL = "CONSUME_CHECK_FAIL";
-        public const string CONSUME_FAIL = "CONSUME_FAIL";
         public const string REFUND_FAIL = "REFUND_FAIL";
         public const string CONDITION_DISSATISFY = "CONDITION_DISSATISFY";
         public const string INVALID_SIGN = "INVALID_SIGN";

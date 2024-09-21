@@ -13,3 +13,5 @@ C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.U
 C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Utilities.pdb
 C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.csproj.AssemblyReference.cache
 C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\obj\Debug\net6.0\WebApi.Repositories.csproj.CopyComplete
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Domain.dll
+C:\Users\Xiong\source\repos\WebApi\WebApi.Repositories\bin\Debug\net6.0\WebApi.Domain.pdb

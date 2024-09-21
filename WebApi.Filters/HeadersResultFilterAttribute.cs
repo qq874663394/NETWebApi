@@ -7,12 +7,21 @@ using System.Threading.Tasks;
 
 namespace WebApi.Filters
 {
-
+    /// <summary>
+    /// 分页特性
+    /// </summary>
     public class HeadersResultFilterAttribute : ResultFilterAttribute, IResultFilter
     {
         string _key = string.Empty;
         string _value = string.Empty;
 
+        /// <summary>
+        /// [HeadersResultFilterAttribute("Access-Control-Expose-Headers", "TotalPages,TotalRecords")]
+        /// Response.Headers.Add("TotalPages", data.TotalPages.ToString());
+        /// Response.Headers.Add("TotalRecords", data.TotalRecords.ToString());
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
         public HeadersResultFilterAttribute(string key, string value)
         {
             _key = key;
