@@ -8,14 +8,14 @@
     ".NETCoreApp,Version=v6.0": {
       "WebApi/1.0.0": {
         "dependencies": {
+          "Controllers": "1.0.0",
+          "Domain": "1.0.0",
+          "Filters": "1.0.0",
           "Microsoft.DotNet.PlatformAbstractions": "5.0.0-preview.5.20278.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
-          "Swashbuckle.AspNetCore": "6.5.0",
-          "WebApi.Controllers": "1.0.0",
-          "WebApi.Domain": "1.0.0",
-          "WebApi.Domain.Services": "1.0.0",
-          "WebApi.Filters": "1.0.0",
-          "WebApi.Repositories": "1.0.0"
+          "Repositories": "1.0.0",
+          "Services": "1.0.0",
+          "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "WebApi.dll": {}
@@ -1812,67 +1812,85 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
-      "WebApi.Controllers/1.0.0": {
+      "Controllers/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
+          "Filters": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "WebApi.Domain": "1.0.0",
-          "WebApi.Filters": "1.0.0",
-          "WebApi.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "runtime": {
-          "WebApi.Controllers.dll": {}
+          "Controllers.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "WebApi.DependencyInjection/1.0.0": {
+      "DependencyInjection/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.1"
         },
         "runtime": {
-          "WebApi.DependencyInjection.dll": {}
+          "DependencyInjection.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "WebApi.Domain/1.0.0": {
+      "Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.25",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
         },
         "runtime": {
-          "WebApi.Domain.dll": {}
+          "Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "WebApi.Domain.Services/1.0.0": {
+      "Filters/1.0.0": {
         "dependencies": {
-          "WebApi.Repositories": "1.0.0"
-        },
-        "runtime": {
-          "WebApi.Domain.Services.dll": {}
-        }
-      },
-      "WebApi.Filters/1.0.0": {
-        "dependencies": {
+          "DependencyInjection": "1.0.0",
+          "Domain": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
-          "WebApi.DependencyInjection": "1.0.0",
-          "WebApi.Domain": "1.0.0",
-          "WebApi.Domain.Services": "1.0.0",
-          "WebApi.Utilities": "1.0.0"
+          "Services": "1.0.0",
+          "Utilities": "1.0.0"
         },
         "runtime": {
-          "WebApi.Filters.dll": {}
+          "Filters.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "WebApi.Repositories/1.0.0": {
+      "Repositories/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "WebApi.Domain": "1.0.0",
-          "WebApi.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "runtime": {
-          "WebApi.Repositories.dll": {}
+          "Repositories.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "WebApi.Utilities/1.0.0": {
+      "Services/1.0.0": {
+        "dependencies": {
+          "Repositories": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Utilities/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.26",
@@ -1880,7 +1898,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "WebApi.Utilities.dll": {}
+          "Utilities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -3284,37 +3305,37 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
-    "WebApi.Controllers/1.0.0": {
+    "Controllers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApi.DependencyInjection/1.0.0": {
+    "DependencyInjection/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApi.Domain/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApi.Domain.Services/1.0.0": {
+    "Filters/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApi.Filters/1.0.0": {
+    "Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApi.Repositories/1.0.0": {
+    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "WebApi.Utilities/1.0.0": {
+    "Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

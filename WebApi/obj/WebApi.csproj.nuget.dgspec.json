@@ -1,88 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\DependencyInjection\\WebApi.DependencyInjection.csproj": {
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\DependencyInjection\\WebApi.DependencyInjection.csproj",
-        "projectName": "WebApi.DependencyInjection",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\DependencyInjection\\WebApi.DependencyInjection.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\DependencyInjection\\obj\\",
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj",
+        "projectName": "Controllers",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\WebApi.Controllers.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\WebApi.Controllers.csproj",
-        "projectName": "WebApi.Controllers",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\WebApi.Controllers.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,14 +32,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj"
               }
             }
           }
@@ -113,7 +48,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -140,87 +81,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj": {
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\DependencyInjection\\DependencyInjection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj",
-        "projectName": "WebApi.Domain.Services",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\obj\\",
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\DependencyInjection\\DependencyInjection.csproj",
+        "projectName": "DependencyInjection",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\DependencyInjection\\DependencyInjection.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\DependencyInjection\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj",
-        "projectName": "WebApi.Domain",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -241,7 +119,84 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -284,24 +239,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj": {
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj",
-        "projectName": "WebApi.Filters",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\obj\\",
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj",
+        "projectName": "Filters",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -316,17 +271,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\DependencyInjection\\WebApi.DependencyInjection.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\DependencyInjection\\WebApi.DependencyInjection.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\DependencyInjection\\DependencyInjection.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\DependencyInjection\\DependencyInjection.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj"
               }
             }
           }
@@ -335,7 +290,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -370,24 +331,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj": {
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj",
-        "projectName": "WebApi.Repositories",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\obj\\",
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj",
+        "projectName": "Repositories",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -402,11 +363,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj"
               }
             }
           }
@@ -415,7 +376,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -442,24 +409,93 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj": {
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj",
-        "projectName": "WebApi.Utilities",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\WebApi.Utilities.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Utilities\\obj\\",
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj",
+        "projectName": "Utilities",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\Utilities.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -480,7 +516,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -519,24 +561,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -551,20 +593,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\WebApi.Controllers.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\WebApi.Controllers.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj"
               },
-              "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj": {
-                "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj"
+              "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj"
               }
             }
           }
@@ -573,7 +615,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -611,7 +659,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

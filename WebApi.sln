@@ -5,13 +5,13 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{D876C0DA-EA6D-43D7-9A2A-01766A7D65BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Controllers", "WebApi.Controller\WebApi.Controllers.csproj", "{FC0CCF75-DE52-491C-A47F-766D424CF7C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controllers", "Controllers\Controllers.csproj", "{FC0CCF75-DE52-491C-A47F-766D424CF7C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Domain", "WebApi.Domain\WebApi.Domain.csproj", "{02FD9C39-0B0B-4102-BCD5-969D00AAED90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{02FD9C39-0B0B-4102-BCD5-969D00AAED90}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Filters", "WebApi.Filters\WebApi.Filters.csproj", "{485BE849-D831-4379-A8EA-D6D772332530}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Filters", "Filters\Filters.csproj", "{485BE849-D831-4379-A8EA-D6D772332530}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Utilities", "WebApi.Utilities\WebApi.Utilities.csproj", "{9E790E5D-26D0-493C-8860-622E190B8888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{9E790E5D-26D0-493C-8860-622E190B8888}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{22F0DBCE-0A50-4960-8867-0FAD61ABF22F}"
 EndProject
@@ -19,11 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CF53AB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{19FAE56B-9974-4893-BB56-CC80E0E847AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.DependencyInjection", "DependencyInjection\WebApi.DependencyInjection.csproj", "{78FA77BC-BF90-4641-9D55-FE5184690024}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{78FA77BC-BF90-4641-9D55-FE5184690024}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Repositories", "WebApi.Repositories\WebApi.Repositories.csproj", "{9BD371BF-B196-4570-B31A-0B8CB063CCBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{9BD371BF-B196-4570-B31A-0B8CB063CCBA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Domain.Services", "WebApi.Domain.Services\WebApi.Domain.Services.csproj", "{C36F0E00-A482-409C-889B-5F06BA77A1A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{C36F0E00-A482-409C-889B-5F06BA77A1A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vue", "Vue", "{1ECEF082-CE19-4E2B-8C17-DD20EB52176D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

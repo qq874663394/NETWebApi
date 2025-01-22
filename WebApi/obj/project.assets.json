@@ -3501,36 +3501,36 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "WebApi.Controllers/1.0.0": {
+      "Controllers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Domain": "1.0.0",
+          "Filters": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "WebApi.Domain": "1.0.0",
-          "WebApi.Filters": "1.0.0",
-          "WebApi.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApi.Controllers.dll": {}
+          "bin/placeholder/Controllers.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApi.Controllers.dll": {}
+          "bin/placeholder/Controllers.dll": {}
         }
       },
-      "WebApi.DependencyInjection/1.0.0": {
+      "DependencyInjection/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.2.0"
         },
         "compile": {
-          "bin/placeholder/WebApi.DependencyInjection.dll": {}
+          "bin/placeholder/DependencyInjection.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApi.DependencyInjection.dll": {}
+          "bin/placeholder/DependencyInjection.dll": {}
         }
       },
-      "WebApi.Domain/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3538,60 +3538,60 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
         },
         "compile": {
-          "bin/placeholder/WebApi.Domain.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApi.Domain.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       },
-      "WebApi.Domain.Services/1.0.0": {
+      "Filters/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "WebApi.Repositories": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/WebApi.Domain.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WebApi.Domain.Services.dll": {}
-        }
-      },
-      "WebApi.Filters/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
+          "DependencyInjection": "1.0.0",
+          "Domain": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
-          "WebApi.DependencyInjection": "1.0.0",
-          "WebApi.Domain": "1.0.0",
-          "WebApi.Domain.Services": "1.0.0",
-          "WebApi.Utilities": "1.0.0"
+          "Services": "1.0.0",
+          "Utilities": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApi.Filters.dll": {}
+          "bin/placeholder/Filters.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApi.Filters.dll": {}
+          "bin/placeholder/Filters.dll": {}
         }
       },
-      "WebApi.Repositories/1.0.0": {
+      "Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "WebApi.Domain": "1.0.0",
-          "WebApi.Utilities": "1.0.0"
+          "Utilities": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/WebApi.Repositories.dll": {}
+          "bin/placeholder/Repositories.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApi.Repositories.dll": {}
+          "bin/placeholder/Repositories.dll": {}
         }
       },
-      "WebApi.Utilities/1.0.0": {
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
+      },
+      "Utilities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3601,10 +3601,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "bin/placeholder/WebApi.Utilities.dll": {}
+          "bin/placeholder/Utilities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApi.Utilities.dll": {}
+          "bin/placeholder/Utilities.dll": {}
         }
       }
     }
@@ -10080,72 +10080,72 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "WebApi.Controllers/1.0.0": {
+    "Controllers/1.0.0": {
       "type": "project",
-      "path": "../WebApi.Controller/WebApi.Controllers.csproj",
-      "msbuildProject": "../WebApi.Controller/WebApi.Controllers.csproj"
+      "path": "../Controllers/Controllers.csproj",
+      "msbuildProject": "../Controllers/Controllers.csproj"
     },
-    "WebApi.DependencyInjection/1.0.0": {
+    "DependencyInjection/1.0.0": {
       "type": "project",
-      "path": "../DependencyInjection/WebApi.DependencyInjection.csproj",
-      "msbuildProject": "../DependencyInjection/WebApi.DependencyInjection.csproj"
+      "path": "../DependencyInjection/DependencyInjection.csproj",
+      "msbuildProject": "../DependencyInjection/DependencyInjection.csproj"
     },
-    "WebApi.Domain/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../WebApi.Domain/WebApi.Domain.csproj",
-      "msbuildProject": "../WebApi.Domain/WebApi.Domain.csproj"
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     },
-    "WebApi.Domain.Services/1.0.0": {
+    "Filters/1.0.0": {
       "type": "project",
-      "path": "../WebApi.Domain.Services/WebApi.Domain.Services.csproj",
-      "msbuildProject": "../WebApi.Domain.Services/WebApi.Domain.Services.csproj"
+      "path": "../Filters/Filters.csproj",
+      "msbuildProject": "../Filters/Filters.csproj"
     },
-    "WebApi.Filters/1.0.0": {
+    "Repositories/1.0.0": {
       "type": "project",
-      "path": "../WebApi.Filters/WebApi.Filters.csproj",
-      "msbuildProject": "../WebApi.Filters/WebApi.Filters.csproj"
+      "path": "../Repositories/Repositories.csproj",
+      "msbuildProject": "../Repositories/Repositories.csproj"
     },
-    "WebApi.Repositories/1.0.0": {
+    "Services/1.0.0": {
       "type": "project",
-      "path": "../WebApi.Repositories/WebApi.Repositories.csproj",
-      "msbuildProject": "../WebApi.Repositories/WebApi.Repositories.csproj"
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     },
-    "WebApi.Utilities/1.0.0": {
+    "Utilities/1.0.0": {
       "type": "project",
-      "path": "../WebApi.Utilities/WebApi.Utilities.csproj",
-      "msbuildProject": "../WebApi.Utilities/WebApi.Utilities.csproj"
+      "path": "../Utilities/Utilities.csproj",
+      "msbuildProject": "../Utilities/Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Controllers >= 1.0.0",
+      "Domain >= 1.0.0",
+      "Filters >= 1.0.0",
       "Microsoft.DotNet.PlatformAbstractions >= 5.0.0-preview.5.20278.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.25",
-      "Swashbuckle.AspNetCore >= 6.5.0",
-      "WebApi.Controllers >= 1.0.0",
-      "WebApi.Domain >= 1.0.0",
-      "WebApi.Domain.Services >= 1.0.0",
-      "WebApi.Filters >= 1.0.0",
-      "WebApi.Repositories >= 1.0.0"
+      "Repositories >= 1.0.0",
+      "Services >= 1.0.0",
+      "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Xiong\\.nuget\\packages\\": {},
+    "C:\\Users\\cn009669\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\WebApi.csproj",
-      "packagesPath": "C:\\Users\\Xiong\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi\\obj\\",
+      "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\cn009669\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Xiong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cn009669\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10160,20 +10160,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\WebApi.Controllers.csproj": {
-              "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Controller\\WebApi.Controllers.csproj"
+            "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj": {
+              "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj"
             },
-            "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj": {
-              "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain.Services\\WebApi.Domain.Services.csproj"
+            "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj": {
-              "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Domain\\WebApi.Domain.csproj"
+            "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj": {
+              "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Filters\\Filters.csproj"
             },
-            "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj": {
-              "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Filters\\WebApi.Filters.csproj"
+            "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Repositories\\Repositories.csproj"
             },
-            "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj": {
-              "projectPath": "C:\\Users\\Xiong\\source\\repos\\WebApi\\WebApi.Repositories\\WebApi.Repositories.csproj"
+            "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Services\\Services.csproj"
             }
           }
         }
@@ -10182,7 +10182,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net6.0": {
@@ -10220,7 +10226,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

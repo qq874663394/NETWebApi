@@ -2,3 +2,16 @@ C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\Dependen
 C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.AssemblyInfoInputs.cache
 C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.AssemblyInfo.cs
 C:\Users\Xiong\source\repos\WebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.csproj.CoreCompileInputs.cache
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\bin\Debug\net6.0\DependencyInjection.deps.json
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\bin\Debug\net6.0\DependencyInjection.dll
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\bin\Debug\net6.0\DependencyInjection.pdb
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.csproj.AssemblyReference.cache
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.AssemblyInfoInputs.cache
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.AssemblyInfo.cs
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.csproj.CoreCompileInputs.cache
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.sourcelink.json
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.dll
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\refint\DependencyInjection.dll
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\DependencyInjection.pdb
+C:\Users\cn009669\source\repos\NETWebApi\DependencyInjection\obj\Debug\net6.0\ref\DependencyInjection.dll

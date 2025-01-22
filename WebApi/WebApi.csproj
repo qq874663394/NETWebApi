@@ -16,11 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApi.Controller\WebApi.Controllers.csproj" />
-    <ProjectReference Include="..\WebApi.Domain.Services\WebApi.Domain.Services.csproj" />
-    <ProjectReference Include="..\WebApi.Domain\WebApi.Domain.csproj" />
-    <ProjectReference Include="..\WebApi.Filters\WebApi.Filters.csproj" />
-    <ProjectReference Include="..\WebApi.Repositories\WebApi.Repositories.csproj" />
+    <ProjectReference Include="..\Controllers\Controllers.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Filters\Filters.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
   </ItemGroup>
 
 </Project>

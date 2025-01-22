@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using WebApi.Controllers;
+using WebApi.Controllers.Shared;
 using WebApi.Domain.Interface.IServices;
 using WebApi.Domain.Services;
 using WebApi.Filters;
@@ -58,7 +61,7 @@ builder.Services.AddSwaggerGen(options =>// 我们可视化接口文档服务
     var xmlCommentsPath = Path.Combine(AppContext.BaseDirectory, "WebApi.xml");
     options.IncludeXmlComments(xmlCommentsPath);
     // 引用其他项目中的 XML 注释文件
-    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "WebApi.Controllers.xml"));
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Controllers.xml"));
 });
 //注册API Explorer
 builder.Services.AddEndpointsApiExplorer();
@@ -93,7 +96,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 //注册控制器
-builder.Services.AddControllers();
+builder.Services.AddControllers(); // 这里替换成你的控制器所在的程序集;
 services.AddScoped<JwtTokenFilterAttribute>();
 //注册API异常过滤器类
 //builder.Services.AddMvc(options =>
