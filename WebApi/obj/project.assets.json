@@ -460,7 +460,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -3501,22 +3501,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Controllers/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Domain": "1.0.0",
-          "Filters": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
-          "Utilities": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Controllers.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Controllers.dll": {}
-        }
-      },
       "DependencyInjection/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4003,16 +3987,16 @@
         "microsoft.aspnetcore.mvc.apiexplorer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
-      "sha512": "/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
+    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "sha512": "ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
-        "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.core.nuspec"
       ]
     },
@@ -10080,11 +10064,6 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Controllers/1.0.0": {
-      "type": "project",
-      "path": "../Controllers/Controllers.csproj",
-      "msbuildProject": "../Controllers/Controllers.csproj"
-    },
     "DependencyInjection/1.0.0": {
       "type": "project",
       "path": "../DependencyInjection/DependencyInjection.csproj",
@@ -10118,7 +10097,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Controllers >= 1.0.0",
       "Domain >= 1.0.0",
       "Filters >= 1.0.0",
       "Microsoft.DotNet.PlatformAbstractions >= 5.0.0-preview.5.20278.1",
@@ -10160,9 +10138,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj": {
-              "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Controllers\\Controllers.csproj"
-            },
             "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\cn009669\\source\\repos\\NETWebApi\\Domain\\Domain.csproj"
             },

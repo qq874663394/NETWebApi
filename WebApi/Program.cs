@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using WebApi.Controllers;
-using WebApi.Controllers.Shared;
+using WebApi.Controllers._Shared;
 using WebApi.Domain.Interface.IServices;
 using WebApi.Domain.Services;
 using WebApi.Filters;
@@ -61,7 +61,7 @@ builder.Services.AddSwaggerGen(options =>// 我们可视化接口文档服务
     var xmlCommentsPath = Path.Combine(AppContext.BaseDirectory, "WebApi.xml");
     options.IncludeXmlComments(xmlCommentsPath);
     // 引用其他项目中的 XML 注释文件
-    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Controllers.xml"));
+    //options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Controllers.xml"));
 });
 //注册API Explorer
 builder.Services.AddEndpointsApiExplorer();
