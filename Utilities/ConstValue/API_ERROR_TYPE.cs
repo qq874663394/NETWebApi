@@ -1,4 +1,4 @@
-﻿namespace WebApi.Utilities.ConstValue
+﻿namespace Utilities.ConstValue
 {
     /// <summary>
     /// 接口错误类型

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using WebApi.Domain.AggregateRoots;
-using WebApi.Domain.Interface.IAggregateRoots;
+using Domain.AggregateRoots;
+using Domain.Interface.IAggregateRoots;
 
-namespace WebApi.Domain.Entities
+namespace Domain.Entities
 {
     /// <summary>
     /// 用户信息表

@@ -1,7 +1,7 @@
-﻿using WebApi.Domain.AggregateRoots.TreeEntity;
-using WebApi.Domain.Interface.IAggregateRoots;
+﻿using Domain.AggregateRoots.TreeEntity;
+using Domain.Interface.IAggregateRoots;
 
-namespace WebApi.Domain.Interface.IRepositories
+namespace Domain.Interface.IRepositories
 {
     public interface IUnitOfWork<TAggregateRoot> where TAggregateRoot : IAggregateRoot
     {

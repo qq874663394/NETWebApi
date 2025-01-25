@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Domain.Exceptions
+namespace Domain.Exceptions
 {
     /// <summary>
     /// 业务逻辑层处理抛出的异常类型

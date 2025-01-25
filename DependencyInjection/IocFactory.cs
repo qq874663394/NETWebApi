@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace WebApi.DependencyInjection
+namespace DependencyInjection
 {
     public static class IocFactory
     {

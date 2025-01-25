@@ -3,26 +3,27 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Linq;
-using WebApi.Domain.AggregateRoots;
-using WebApi.Domain.Entities;
-using WebApi.Domain.Enum;
-using WebApi.Domain.Interface.IAggregateRoots;
-using WebApi.Domain.Interface.IRepositories;
-using WebApi.Domain.Interface.IServices;
-using WebApi.Domain.Interface.ISpecifications;
-using WebApi.Domain.Specifications;
-using WebApi.Filters;
+using Domain.AggregateRoots;
+using Domain.Entities;
+using Domain.Enum;
+using Domain.Interface.IAggregateRoots;
+using Domain.Interface.IRepositories;
+using Domain.Interface.IServices;
+using Domain.Interface.ISpecifications;
+using Domain.Specifications;
+using Filters;
 
-namespace WebApi.Controllers._Shared
+namespace Controllers._Shared
 {
-    [EnableCors("AllowSpecificOrigins")]
 
-    [Route("api/[controller]/[action]")]
-    [ApiController]
+
     /// <summary>
     /// 控制器基类
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
+    [Route("api/[controller]/[action]")]
+    [ApiController]
+    [EnableCors("AllowSpecificOrigin")]  // 为整个控制器启用 CORS
     public class BaseController<TEntity> : ControllerBase
             where TEntity : class, IEntity, IAggregateRoot
     {
@@ -34,33 +35,34 @@ namespace WebApi.Controllers._Shared
         /// <summary>
         /// 日志
         /// </summary>
-        protected readonly ILogger<BaseController<TEntity>> _logger;
+        protected readonly Lazy<ILogger> _logger;
 
 
         /// <summary>
         /// 构造函数，用于依赖注入
         /// </summary>
         /// <param name="services">服务层，包含工作单元和仓储</param>
-        public BaseController(IServices<T_User> services)
+        public BaseController(IServices<TEntity> services)
         {
-            this.services = services;
+            _services = services;
         }
 
         /// <summary>
         /// 构造函数，用于依赖注入
         /// </summary>
         /// <param name="services">服务层，包含工作单元和仓储</param>
-        /// <param name="logger">日志</param>
-        public BaseController(IServices<TEntity> services, ILogger<BaseController<TEntity>> logger)
+        /// <param name="loggerFactory">日志</param>
+        public BaseController(IServices<TEntity> services, ILoggerFactory loggerFactory)
         {
             _services = services;
-            _logger = logger;
+            // 使用 Lazy 来创建 ILogger
+            _logger = new Lazy<ILogger>(() => loggerFactory.CreateLogger(GetType()));
 
             // 如果上传目录不存在，则自动创建
             if (!Directory.Exists(_uploadFolder))
             {
                 Directory.CreateDirectory(_uploadFolder);
-                _logger.LogInformation($"上传目录已创建: {_uploadFolder}");
+                _logger.Value.LogInformation($"上传目录已创建: {_uploadFolder}");
             }
         }
 
@@ -100,7 +102,7 @@ namespace WebApi.Controllers._Shared
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "文件上传失败");
+                _logger.Value.LogError(ex, "文件上传失败");
                 return StatusCode(500, "文件上传失败，请稍后重试。");
             }
         }
@@ -124,7 +126,7 @@ namespace WebApi.Controllers._Shared
                 var validationResult = ValidateFile(file);
                 if (!validationResult.IsValid)
                 {
-                    _logger.LogWarning($"文件 {file.FileName} 验证失败: {validationResult.Message}");
+                    _logger.Value.LogWarning($"文件 {file.FileName} 验证失败: {validationResult.Message}");
                     continue;
                 }
 
@@ -135,7 +137,7 @@ namespace WebApi.Controllers._Shared
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, $"文件 {file.FileName} 上传失败。");
+                    _logger.Value.LogError(ex, $"文件 {file.FileName} 上传失败。");
                 }
             }
 
@@ -169,12 +171,12 @@ namespace WebApi.Controllers._Shared
             try
             {
                 await DeleteFileAsync(filePath);
-                _logger.LogInformation($"文件已删除: {fileName}");
+                _logger.Value.LogInformation($"文件已删除: {fileName}");
                 return Ok($"文件 {fileName} 已成功删除。");
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"删除文件 {fileName} 失败。");
+                _logger.Value.LogError(ex, $"删除文件 {fileName} 失败。");
                 return StatusCode(500, "文件删除失败，请稍后重试。");
             }
         }
@@ -217,7 +219,7 @@ namespace WebApi.Controllers._Shared
                 await file.CopyToAsync(stream);
             }
 
-            _logger.LogInformation($"文件已保存: {fileName}");
+            _logger.Value.LogInformation($"文件已保存: {fileName}");
             return fileName;
         }
 
@@ -253,6 +255,24 @@ namespace WebApi.Controllers._Shared
             return Ok(entity); // 返回查询结果
         }
         /// <summary>
+        /// 查询全部数据
+        /// </summary>
+        /// <param name="sortPredicate">排序字段列名</param>
+        /// <returns></returns>
+
+        [HeadersResultFilter("Access-Control-Expose-Headers", "TotalPages,TotalRecords")]
+        [HttpGet]
+        public virtual async Task<ActionResult<IEnumerable<TEntity>>> GetAll([FromQuery] string[] sortPredicate)
+        {
+            //生成排序表达式
+            var _sortPredicate = SpecExprExtensions.GetExpression<TEntity>(sortPredicate);
+            //获取数据
+            var data = await _services.Repository.GetAllAsync(_sortPredicate, SortOrder.Descending);
+
+            return Ok(data);
+        }
+
+        /// <summary>
         /// 查询全部数据并分页
         /// </summary>
         /// <param name="columnNames">动态查询列名</param>
@@ -264,7 +284,7 @@ namespace WebApi.Controllers._Shared
 
         [HeadersResultFilter("Access-Control-Expose-Headers", "TotalPages,TotalRecords")]
         [HttpGet]
-        public virtual async Task<ActionResult<IEnumerable<TEntity>>> GetAll(
+        public virtual async Task<ActionResult<IEnumerable<TEntity>>> GetAllPage(
             [FromQuery] string[] columnNames,
             [FromQuery] string columnValue,
             [FromQuery] string[] sortPredicate,

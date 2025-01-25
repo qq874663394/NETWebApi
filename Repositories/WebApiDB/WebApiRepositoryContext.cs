@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.Interface.IAggregateRoots;
+using Domain.Interface.IAggregateRoots;
 
-namespace WebApi.Repositories.WebApiDB
+namespace Repositories.WebApiDB
 {
     public class WebApiRepositoryContext
     {

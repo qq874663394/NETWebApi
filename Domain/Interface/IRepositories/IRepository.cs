@@ -4,12 +4,12 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.AggregateRoots.TreeEntity;
-using WebApi.Domain.Enum;
-using WebApi.Domain.Interface.IAggregateRoots;
-using WebApi.Domain.Interface.ISpecifications;
+using Domain.AggregateRoots.TreeEntity;
+using Domain.Enum;
+using Domain.Interface.IAggregateRoots;
+using Domain.Interface.ISpecifications;
 
-namespace WebApi.Domain.Interface.IRepositories
+namespace Domain.Interface.IRepositories
 {
     /// <summary>
     /// 仓储接口，定义了对实体进行 CRUD 操作的方法。

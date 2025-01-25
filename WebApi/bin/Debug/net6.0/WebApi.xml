@@ -4,96 +4,109 @@
         <name>WebApi</name>
     </assembly>
     <members>
-        <member name="T:WebApi.Controllers.HomeController">
+        <member name="T:Controllers.HomeController">
             <summary>
             主页跳转
             </summary>
         </member>
-        <member name="M:WebApi.Controllers.HomeController.Index">
+        <member name="M:Controllers.HomeController.Index">
             <summary>
             主页
             </summary>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers.UserManager.Controllers.UserController.Index">
+        <member name="M:Controllers.UserManager.Controllers.UserController.Index">
             <summary>
             主页
             </summary>
             <returns></returns>
         </member>
-        <member name="F:WebApi.Controllers._Shared.BaseController`1._services">
+        <member name="T:Controllers._Shared.BaseController`1">
+            <summary>
+            控制器基类
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="F:Controllers._Shared.BaseController`1._services">
             <summary>
             服务层
             </summary>
         </member>
-        <member name="F:WebApi.Controllers._Shared.BaseController`1._logger">
+        <member name="F:Controllers._Shared.BaseController`1._logger">
             <summary>
             日志
             </summary>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.#ctor(WebApi.Domain.Interface.IServices.IServices{WebApi.Domain.Entities.T_User})">
+        <member name="M:Controllers._Shared.BaseController`1.#ctor(Domain.Interface.IServices.IServices{`0})">
             <summary>
             构造函数，用于依赖注入
             </summary>
             <param name="services">服务层，包含工作单元和仓储</param>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.#ctor(WebApi.Domain.Interface.IServices.IServices{`0},Microsoft.Extensions.Logging.ILogger{WebApi.Controllers._Shared.BaseController{`0}})">
+        <member name="M:Controllers._Shared.BaseController`1.#ctor(Domain.Interface.IServices.IServices{`0},Microsoft.Extensions.Logging.ILoggerFactory)">
             <summary>
             构造函数，用于依赖注入
             </summary>
             <param name="services">服务层，包含工作单元和仓储</param>
-            <param name="logger">日志</param>
+            <param name="loggerFactory">日志</param>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.UploadSingleFile(Microsoft.AspNetCore.Http.IFormFile)">
+        <member name="M:Controllers._Shared.BaseController`1.UploadSingleFile(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
             单文件上传
             </summary>
             <param name="file">文件数据</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.UploadMultipleFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+        <member name="M:Controllers._Shared.BaseController`1.UploadMultipleFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
             <summary>
             多文件上传
             </summary>
             <param name="files">文件数据</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.DeleteFile(System.String)">
+        <member name="M:Controllers._Shared.BaseController`1.DeleteFile(System.String)">
             <summary>
             删除文件
             </summary>
             <param name="fileName">文件名</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.ValidateFile(Microsoft.AspNetCore.Http.IFormFile)">
+        <member name="M:Controllers._Shared.BaseController`1.ValidateFile(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
             校验文件
             </summary>
             <param name="file">文件数据</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.SaveFileAsync(Microsoft.AspNetCore.Http.IFormFile)">
+        <member name="M:Controllers._Shared.BaseController`1.SaveFileAsync(Microsoft.AspNetCore.Http.IFormFile)">
             <summary>
             异步保存文件到上传目录
             </summary>
             <param name="file">文件数据</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.DeleteFileAsync(System.String)">
+        <member name="M:Controllers._Shared.BaseController`1.DeleteFileAsync(System.String)">
             <summary>
             异步删除文件
             </summary>
             <param name="filePath">文件路径</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.GetById(System.Guid)">
+        <member name="M:Controllers._Shared.BaseController`1.GetById(System.Guid)">
             <summary>
             根据主键查询
             </summary>
             <param name="code">主键</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.GetAll(System.String[],System.String,System.String[],System.Int32,System.Int32)">
+        <member name="M:Controllers._Shared.BaseController`1.GetAll(System.String[])">
+            <summary>
+            查询全部数据
+            </summary>
+            <param name="sortPredicate">排序字段列名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Controllers._Shared.BaseController`1.GetAllPage(System.String[],System.String,System.String[],System.Int32,System.Int32)">
             <summary>
             查询全部数据并分页
             </summary>
@@ -104,14 +117,14 @@
             <param name="pageSize">分页大小</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.Create(`0)">
+        <member name="M:Controllers._Shared.BaseController`1.Create(`0)">
             <summary>
             新增数据
             </summary>
             <param name="entity"></param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.Update(System.Guid,`0)">
+        <member name="M:Controllers._Shared.BaseController`1.Update(System.Guid,`0)">
             <summary>
             更新数据
             </summary>
@@ -119,7 +132,7 @@
             <param name="entity">修改的实体</param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers._Shared.BaseController`1.DeleteFlag(System.Guid)">
+        <member name="M:Controllers._Shared.BaseController`1.DeleteFlag(System.Guid)">
             <summary>
             物理删除
             </summary>

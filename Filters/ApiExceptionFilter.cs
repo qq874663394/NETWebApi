@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using System.Net;
-using WebApi.DependencyInjection;
-using WebApi.Domain.Exceptions;
-using WebApi.Utilities.ConstValue;
+using DependencyInjection;
+using Domain.Exceptions;
+using Utilities.ConstValue;
 
-namespace WebApi.Filters
+namespace Filters
 {
     //public class ApiExceptionFilter : IExceptionFilter
     //{

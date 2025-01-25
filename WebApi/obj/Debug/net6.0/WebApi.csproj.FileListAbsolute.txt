@@ -172,15 +172,12 @@ C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\runtimes\win\li
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Controllers.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\DependencyInjection.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Domain.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Filters.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Repositories.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Services.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Utilities.dll
-C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Controllers.pdb
-C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Controllers.xml
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Services.pdb
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Domain.pdb
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\bin\Debug\net6.0\Filters.pdb
@@ -205,7 +202,6 @@ C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\staticwebassets
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebApi.props
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WebApi.props
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\WebApi.csproj.Up2Date
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\WebApi.dll
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\refint\WebApi.dll
@@ -213,3 +209,4 @@ C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\WebApi.xml
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\cn009669\source\repos\NETWebApi\WebApi\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

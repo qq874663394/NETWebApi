@@ -1,3 +1,44 @@
+//{
+//  "profiles": {
+//    "WebApi": {
+//      "commandName": "Project",
+//      "launchBrowser": true,
+//      "launchUrl": "swagger",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      },
+//      "dotnetRunMessages": true,
+//      "applicationUrl": "https://localhost:7273;http://localhost:5056"
+//    },
+//    "IIS Express": {
+//      "commandName": "IISExpress",
+//      "launchBrowser": true,
+//      "launchUrl": "swagger",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      }
+//    },
+//    "Docker": {
+//      "commandName": "Docker",
+//      "launchBrowser": true,
+//      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+//      "environmentVariables": {
+//        "ASPNETCORE_URLS": "https://+:443;http://+:80"
+//      },
+//      "publishAllPorts": true,
+//      "useSSL": true
+//    }
+//  },
+//  "$schema": "https://json.schemastore.org/launchsettings.json",
+//  "iisSettings": {
+//    "windowsAuthentication": false,
+//    "anonymousAuthentication": true,
+//    "iisExpress": {
+//      "applicationUrl": "http://localhost:47878",
+//      "sslPort": 44325
+//    }
+//  }
+//}
 {
   "profiles": {
     "WebApi": {
@@ -8,7 +49,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7273;http://localhost:5056"
+      "applicationUrl": "http://localhost:5056" // 移除 https://
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -16,6 +57,9 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "iisExpress": {
+        "applicationUrl": "http://localhost:47878" // 移除 sslPort 配置
       }
     },
     "Docker": {
@@ -23,10 +67,10 @@
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "environmentVariables": {
-        "ASPNETCORE_URLS": "https://+:443;http://+:80"
+        "ASPNETCORE_URLS": "http://+:80" // 移除 https://
       },
       "publishAllPorts": true,
-      "useSSL": true
+      "useSSL": false // 设置为 false
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
@@ -34,8 +78,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:47878",
-      "sslPort": 44325
+      "applicationUrl": "http://localhost:47878" // 移除 sslPort 配置
     }
   }
 }

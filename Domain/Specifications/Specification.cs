@@ -4,9 +4,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.Interface.ISpecifications;
+using Domain.Interface.ISpecifications;
 
-namespace WebApi.Domain.Specifications
+namespace Domain.Specifications
 {
     /// <summary>
     /// 表示一个规范，用于定义实体的条件检查

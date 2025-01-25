@@ -1,10 +1,10 @@
-﻿using WebApi.Domain.Entities;
-using WebApi.Domain.Interface.IRepositories;
-using WebApi.Domain.Interface.IRepositories.WebApiDB;
-using WebApi.Domain.Interface.IServices;
-using WebApi.Domain.Interface.IServices.WebApiDB;
+﻿using Domain.Entities;
+using Domain.Interface.IRepositories;
+using Domain.Interface.IRepositories.WebApiDB;
+using Domain.Interface.IServices;
+using Domain.Interface.IServices.WebApiDB;
 
-namespace WebApi.Domain.Services.WebApiDB
+namespace Domain.Services.WebApiDB
 {
     public class RoleService : IRoleServices
     {

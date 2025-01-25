@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Utilities.ConstValue
+namespace Utilities.ConstValue
 {
     public static class Define
     {

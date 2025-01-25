@@ -1,15 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApi.Controllers._Shared;
-using WebApi.Domain.Entities;
-using WebApi.Domain.Interface.IServices;
+using Controllers._Shared;
+using Domain.Entities;
+using Domain.Interface.IServices;
+using Microsoft.Extensions.Logging;
+using Domain.Interface.IRepositories;
+using Domain.Services;
+using Domain.Interface.IServices.WebApiDB;
+using Domain.Services.WebApiDB;
+using Microsoft.AspNetCore.Cors;
 
-namespace WebApi.Controllers.UserManager.Controllers
+namespace Controllers.UserManager.Controllers
 {
 
+    [EnableCors("AllowSpecificOrigins")]
     public class UserController : BaseController<T_User>
     {
-        public UserController(IServices<T_User> services, ILogger<BaseController<T_User>> logger) : base(services, logger)
+        UserService _service;
+        Lazy<ILogger> _localLogger;
+        public UserController(IUserServices services, ILoggerFactory loggerFactory) : base(services, loggerFactory)
         {
+            _localLogger = new Lazy<ILogger>(() => loggerFactory.CreateLogger(GetType()));
+            _service = services as UserService;
         }
 
         /// <summary>

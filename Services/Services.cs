@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.AggregateRoots.TreeEntity;
-using WebApi.Domain.Entities;
-using WebApi.Domain.Interface.IAggregateRoots;
-using WebApi.Domain.Interface.IRepositories;
-using WebApi.Domain.Interface.IServices;
+using Domain.AggregateRoots.TreeEntity;
+using Domain.Entities;
+using Domain.Interface.IAggregateRoots;
+using Domain.Interface.IRepositories;
+using Domain.Interface.IServices;
 
-namespace WebApi.Domain.Services
+namespace Domain.Services
 {
     public class Services<T> : IServices<T> where T : class, IEntity, IAggregateRoot
     {

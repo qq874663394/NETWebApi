@@ -5,17 +5,17 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.Interface.IAggregateRoots;
-using WebApi.Domain.Interface.IRepositories;
-using WebApi.Domain.Interface.ISpecifications;
-using WebApi.Domain.Specifications;
-using WebApi.Domain;
-using WebApi.Repositories.WebApiDB;
-using WebApi.Domain.Enum;
+using Domain.Interface.IAggregateRoots;
+using Domain.Interface.IRepositories;
+using Domain.Interface.ISpecifications;
+using Domain.Specifications;
+using Domain;
+using Repositories.WebApiDB;
+using Domain.Enum;
 using Microsoft.EntityFrameworkCore.Storage;
-using WebApi.Domain.AggregateRoots.TreeEntity;
+using Domain.AggregateRoots.TreeEntity;
 
-namespace WebApi.Repositories
+namespace Repositories
 {
     public abstract class BaseRepository<TEntity> : IWebApiRepository<TEntity>
             where TEntity : class, IEntity

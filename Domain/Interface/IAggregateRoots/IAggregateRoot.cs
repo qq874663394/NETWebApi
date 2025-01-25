@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Domain.Interface.IAggregateRoots
+namespace Domain.Interface.IAggregateRoots
 {
     public interface IAggregateRoot : IEntity
     {

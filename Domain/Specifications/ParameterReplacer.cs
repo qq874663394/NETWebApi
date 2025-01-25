@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Domain.Specifications
+namespace Domain.Specifications
 {
     // 辅助类，用于替换表达式中的参数
     public class ParameterReplacer : ExpressionVisitor

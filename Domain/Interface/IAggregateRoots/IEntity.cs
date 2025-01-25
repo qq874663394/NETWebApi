@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace WebApi.Domain.Interface.IAggregateRoots
+namespace Domain.Interface.IAggregateRoots
 {
     public interface IEntity
     {

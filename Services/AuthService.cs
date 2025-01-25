@@ -8,10 +8,10 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.Interface.IServices;
-using WebApi.Domain.Model;
+using Domain.Interface.IServices;
+using Domain.Model;
 
-namespace WebApi.Domain.Services
+namespace Domain.Services
 {
     public class AuthService : IAuthServices
     {

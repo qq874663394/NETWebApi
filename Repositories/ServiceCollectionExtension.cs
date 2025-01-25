@@ -1,12 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using WebApi.Domain.Entities;
-using WebApi.Domain.Interface.IAggregateRoots;
-using WebApi.Domain.Interface.IRepositories;
-using WebApi.Domain.Interface.IRepositories.WebApiDB;
-using WebApi.Domain.Interface.IServices;
-using WebApi.Repositories.WebApiDB;
+using Domain.Entities;
+using Domain.Interface.IAggregateRoots;
+using Domain.Interface.IRepositories;
+using Domain.Interface.IRepositories.WebApiDB;
+using Domain.Interface.IServices;
+using Repositories.WebApiDB;
+using Microsoft.Extensions.Logging;
 
-namespace WebApi.Repositories
+namespace Repositories
 {
     public static class ServiceCollectionExtension
     {
@@ -20,9 +21,11 @@ namespace WebApi.Repositories
             services.AddTransient(typeof(IRepository<>), typeof(WebApiRepository<>));
 
             //Ioc UnitOfWork
-            services.AddTransient<IUserUnitOfWork, UserUnitOfWork>();
-            services.AddTransient<IRoleUnitOfWork, RoleUnitOfWork>();
+
+            services.AddTransient<IMenuUnitOfWork, MenuUnitOfWork>();
             services.AddTransient<IOrgUnitOfWork, OrgUnitOfWork>();
+            services.AddTransient<IRoleUnitOfWork, RoleUnitOfWork>();
+            services.AddTransient<IUserUnitOfWork, UserUnitOfWork>();
 
             return services;
         }

@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Converters;
 using System;
 
-namespace WebApi.Utilities.Converter
+namespace Utilities.Converter
 {
     public class ChinaDateTimeConverter : DateTimeConverterBase
     {

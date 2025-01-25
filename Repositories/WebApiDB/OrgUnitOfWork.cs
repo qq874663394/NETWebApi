@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.Entities;
-using WebApi.Domain.Interface.IRepositories;
-using WebApi.Domain.Interface.IRepositories.WebApiDB;
+using Domain.Entities;
+using Domain.Interface.IRepositories;
+using Domain.Interface.IRepositories.WebApiDB;
 
-namespace WebApi.Repositories.WebApiDB
+namespace Repositories.WebApiDB
 {
     public class OrgUnitOfWork : BaseUnitOfWork<T_Org>, IOrgUnitOfWork
     {

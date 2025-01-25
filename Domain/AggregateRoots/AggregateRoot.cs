@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using WebApi.Domain.Interface.IAggregateRoots;
+using Domain.Interface.IAggregateRoots;
 
-namespace WebApi.Domain.AggregateRoots
+namespace Domain.AggregateRoots
 {
     public abstract class AggregateRoot : Entity, IAggregateRoot
     {

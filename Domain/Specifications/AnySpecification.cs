@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Domain.Specifications
+namespace Domain.Specifications
 {
     /// <summary>
     /// 表示一个永远为真的规范，即匹配任何实体

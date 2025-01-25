@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace WebApi.Domain
+namespace Domain
 {
     /// <summary>
     /// 表示一个分页结果，包含分页信息以及当前页的数据集合。

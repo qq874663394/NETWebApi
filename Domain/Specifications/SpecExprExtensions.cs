@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Domain.Specifications
+namespace Domain.Specifications
 {
     //表达式增强类，实现Not、And、Or方法
     public static class SpecExprExtensions

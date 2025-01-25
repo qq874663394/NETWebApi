@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using WebApi.DependencyInjection;
-using WebApi.Domain.Interface.IServices;
-using WebApi.Domain.Services;
+using DependencyInjection;
+using Domain.Interface.IServices;
+using Domain.Services;
 
-namespace WebApi.Filters
+namespace Filters
 {
 
     /// <summary>

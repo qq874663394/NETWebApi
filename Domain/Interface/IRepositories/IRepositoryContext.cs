@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.Interface.IAggregateRoots;
+using Domain.Interface.IAggregateRoots;
 
-namespace WebApi.Domain.Interface.IRepositories
+namespace Domain.Interface.IRepositories
 {
     /// <summary>
     /// 表示一个仓储上下文接口，继承自工作单元接口。

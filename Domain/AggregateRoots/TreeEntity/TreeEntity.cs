@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using WebApi.Domain.AggregateRoots;
-using WebApi.Domain.Interface.IAggregateRoots;
+using Domain.AggregateRoots;
+using Domain.Interface.IAggregateRoots;
 
-namespace WebApi.Domain.AggregateRoots.TreeEntity
+namespace Domain.AggregateRoots.TreeEntity
 {
     /// <summary>
     /// 树状结构实体

@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using WebApi.Domain.AggregateRoots;
+using System.ComponentModel.DataAnnotations.Schema;
+using Domain.AggregateRoots;
 
-using WebApi.Domain.Interface.IAggregateRoots;
-namespace WebApi.Domain.Entities
+using Domain.Interface.IAggregateRoots;
+namespace Domain.Entities
 {
     public partial class T_Menu : Entity, IAggregateRoot
     {

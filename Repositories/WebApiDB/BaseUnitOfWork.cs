@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.AggregateRoots.TreeEntity;
-using WebApi.Domain.Interface.IAggregateRoots;
-using WebApi.Domain.Interface.IRepositories;
+using Domain.AggregateRoots.TreeEntity;
+using Domain.Interface.IAggregateRoots;
+using Domain.Interface.IRepositories;
 
-namespace WebApi.Repositories.WebApiDB
+namespace Repositories.WebApiDB
 {
     public class BaseUnitOfWork<TAggregateRoot> : IUnitOfWork<TAggregateRoot>
         where TAggregateRoot : IAggregateRoot

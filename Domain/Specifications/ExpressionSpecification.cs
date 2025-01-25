@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Domain.Specifications
+namespace Domain.Specifications
 {
     /// <summary>
     /// 表达式规范，表示一个基于表达式树的规范

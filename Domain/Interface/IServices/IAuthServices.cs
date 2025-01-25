@@ -4,9 +4,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.Model;
+using Domain.Model;
 
-namespace WebApi.Domain.Interface.IServices
+namespace Domain.Interface.IServices
 {
     public interface IAuthServices
     {

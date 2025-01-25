@@ -1,8 +1,8 @@
-﻿using WebApi.Domain.Entities;
-using WebApi.Domain.Interface.IAggregateRoots;
-using WebApi.Domain.Interface.IRepositories;
+﻿using Domain.Entities;
+using Domain.Interface.IAggregateRoots;
+using Domain.Interface.IRepositories;
 
-namespace WebApi.Domain.Interface.IServices.WebApiDB
+namespace Domain.Interface.IServices.WebApiDB
 {
     public interface IOrgServices : IServices<T_Org>
     {

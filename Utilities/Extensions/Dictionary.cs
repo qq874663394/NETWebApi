@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace WebApi.Utilities.Extensions
+namespace Utilities.Extensions
 {
     public static class Dictionary
     {

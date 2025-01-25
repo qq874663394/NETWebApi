@@ -1,8 +1,8 @@
 ﻿
 using Newtonsoft.Json;
-using WebApi.Utilities.Extensions;
+using Utilities.Extensions;
 
-namespace WebApi.Utilities.Converter
+namespace Utilities.Converter
 {
     public class BytesConvert : JsonConverter
     {

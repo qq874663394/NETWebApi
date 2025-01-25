@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Domain.AggregateRoots;
+using Domain.AggregateRoots;
 
-namespace WebApi.Domain.Exceptions
+namespace Domain.Exceptions
 {
     public class Error : Entity
     {

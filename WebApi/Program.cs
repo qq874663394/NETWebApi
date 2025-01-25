@@ -3,20 +3,31 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using WebApi.Controllers;
-using WebApi.Controllers._Shared;
-using WebApi.Domain.Interface.IServices;
-using WebApi.Domain.Services;
-using WebApi.Filters;
-using WebApi.Repositories;
-using WebApi.Repositories.WebApiDB;
-using WebApi.Utilities;
+using Controllers;
+using Controllers._Shared;
+using Domain.Interface.IServices;
+using Domain.Services;
+using Filters;
+using Repositories;
+using Repositories.WebApiDB;
+using Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 //读取appsetting.json
 var configuration = builder.Configuration;
-//设置可跨域
-builder.Services.AddCors();
+
+// 添加 CORS 服务
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", policy =>
+    {
+        policy.WithOrigins("http://localhost:9527/", "http://192.168.31.176:9527/") // List your allowed origins
+           .AllowAnyMethod()  // Allow any method (GET, POST, etc.)
+           .AllowAnyHeader()  // Allow any header
+           .AllowCredentials(); // Allow credentials (cookies, authorization headers, etc.)
+    });
+});
+
 //读取数据库配置
 builder.Services.AddDbContext<WebApiDbContext>((serviceProvider, options) =>
 {
@@ -47,6 +58,13 @@ builder.Services.AddSwaggerGen(options =>// 我们可视化接口文档服务
             }, Array.Empty<string>()
         }
     };
+    // 注册 ILoggerFactory
+    builder.Services.AddLogging(logging =>
+    {
+        logging.AddConsole(); // 输出到控制台
+        logging.AddDebug();   // 输出到调试窗口
+                              // 添加其他日志提供者
+    });
     options.AddSecurityRequirement(security);//添加一个必须的全局安全信息，和AddSecurityDefinition方法指定的方案名称要一致，这里是Bearer。
 
     options.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
@@ -97,6 +115,7 @@ builder.Services.AddAuthentication(options =>
 });
 //注册控制器
 builder.Services.AddControllers(); // 这里替换成你的控制器所在的程序集;
+
 services.AddScoped<JwtTokenFilterAttribute>();
 //注册API异常过滤器类
 //builder.Services.AddMvc(options =>
@@ -105,11 +124,20 @@ services.AddScoped<JwtTokenFilterAttribute>();
 //});
 
 var app = builder.Build();
+
+
+// 在应用程序启动时自动执行数据库迁移
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<WebApiDbContext>();
+    //dbContext.Database.Migrate();  // 自动应用所有迁移
+    dbContext.Database.EnsureCreated();  // 强制创建数据库和表
+}
+
 app.UseDeveloperExceptionPage();
 // 启用 Swagger UI（仅在开发环境中）
 app.UseRouting();
-app.UseCors("any");
-
+app.UseCors("AllowSpecificOrigin"); // 确保在其他中间件之前启用 CORS
 //调用中间件：UseAuthentication（认证），必须在所有需要身份认证的中间件前调用，比如 UseAuthorization（授权）。
 app.UseAuthentication();
 app.UseAuthorization();
@@ -117,8 +145,10 @@ app.UseAuthorization();
 app.UseSwagger();// 启用swagger中间件
 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApplication1 v1"));// 对swaggerui界面的中间件启用
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthorization();
+
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();

@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApi.Utilities.AutofacManager;
-using WebApi.Utilities.ConstValue;
+using Utilities.AutofacManager;
+using Utilities.ConstValue;
 
-namespace WebApi.Utilities
+namespace Utilities
 {
     public static class HttpContextUtil
     {

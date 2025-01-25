@@ -2,7 +2,7 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Xml;
-namespace WebApi.Utilities.Extensions
+namespace Utilities.Extensions
 {
     public static class Bytes
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Utilities.Extensions
+namespace Utilities.Extensions
 {
 
     public class Response

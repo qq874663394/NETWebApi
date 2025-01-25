@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Utilities.Extensions
+namespace Utilities.Extensions
 {
     /// <summary>
     /// 提供了对 BCrypt 哈希算法的简单封装。

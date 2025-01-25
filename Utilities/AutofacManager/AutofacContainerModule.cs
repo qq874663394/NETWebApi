@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Utilities.AutofacManager
+namespace Utilities.AutofacManager
 {
     /// <summary>
     /// 提供全局静态获取服务的能力。
